@@ -6,11 +6,9 @@ import guru.springframework.sfgdi.repositories.EnglishGreetingRepository;
 import guru.springframework.sfgdi.repositories.EnglishGreetingRepositoryImpl;
 import guru.springframework.sfgdi.services.*;
 import org.springframework.beans.factory.annotation.Configurable;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Primary;
-import org.springframework.context.annotation.Profile;
+import org.springframework.context.annotation.*;
 
+@ImportResource("classpath:sfgdi-config.xml")
 @Configuration
 public class GreetingServiceConfig {
     @Bean
@@ -42,7 +40,7 @@ public class GreetingServiceConfig {
     I18NSpanishService i18NSpanishService() {
         return new I18NSpanishService();
     }
-    @Bean
+
     ConstructorGreetingService constructorGreetingService() {
         return new ConstructorGreetingService();
     }
