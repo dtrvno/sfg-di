@@ -1,0 +1,4 @@
+guru:
+  username: qa-superuser
+  password: qa-dbPassword
+  jdbcurl: qa-testurl

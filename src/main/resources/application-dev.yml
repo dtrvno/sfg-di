@@ -1,0 +1,4 @@
+guru:
+  username: dev-superuser
+  password: dev-dbPassword
+  jdbcurl: dev-testurl
